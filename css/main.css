@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: rebeccapurple;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -108,6 +108,31 @@ body {
   height: 100%;
 }
 
+header,
+footer {
+  background-color: #222;
+  height: 80px;
+  width: 100%;
+}
+
+main {
+  background: url(../img/AdobeStock_189728887.jpg) no-repeat center center fixed;
+  height:100%;
+  height:400px;
+  width: 100%;
+}
+
+main a {
+    text-decoration:none;
+}
+
+header,
+footer,
+main {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
@@ -116,12 +141,17 @@ body {
   justify-content:space-between;
   align-items:centered;
 }
+footer {
+    justify-content:space-between;
+    padding:0 100px;
+}
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: Rebeccapurple;
   line-height: 1.5em;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height:1.2em;
   text-align:center;
   background-color: #ccb3e6;
   height: 300px;
@@ -129,6 +159,11 @@ body {
   width:30%;
   justify-content:center;
   align-items:center;
+  padding:10px;
+}
+
+header h1 {
+    color:#FFF;
 }
 
 p {
